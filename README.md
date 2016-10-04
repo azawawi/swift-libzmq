@@ -20,6 +20,26 @@ zmq_version(&major, &minor, &patch)
 print("Version is \(major),\(minor),\(patch)")
 ```
 
+## Usage
+
+Your `Package.swift` should be something like the following code to be able to
+use this package:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "YourModuleName",
+    dependencies: [
+        .Package(
+            url          : "https://github.com/azawawi/swift-libzmq.git",
+            majorVersion : 0,
+            minor        : 1
+        )
+    ]
+)
+```
+
 ## Installation
 
 ZeroMQ library `libzmq` is needed. Please follow the platform-specific
