@@ -4,7 +4,7 @@
 [![Platform][platform-badge]][platform-url]
 [![License][mit-badge]][mit-url]
 
-This module provides a low-level Swift module import for the
+This package provides a low-level Swift bindings for the
 [`libzmq`](https://github.com/zeromq/libzmq) library.
 
 ## Example
@@ -29,7 +29,7 @@ use this package:
 import PackageDescription
 
 let package = Package(
-    name: "YourModuleName",
+    name: "YourPackageName",
     dependencies: [
         .Package(
             url          : "https://github.com/azawawi/swift-libzmq.git",
