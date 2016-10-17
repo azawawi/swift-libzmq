@@ -17,7 +17,7 @@ var major: Int32 = 0
 var minor: Int32 = 0
 var patch: Int32 = 0
 zmq_version(&major, &minor, &patch)
-print("Version is \(major),\(minor),\(patch)")
+print("Version is \(major).\(minor).\(patch)")
 ```
 
 ## Usage
